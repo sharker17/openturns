@@ -1,0 +1,6 @@
+ - cd openturns
+   - mkdir build
+   - cd build
+   - cmake .. -DCMAKE_INSTALL_PREFIX=~/.local -DUSE_LAPACKE:BOOL=OFF -DLAPACKE_FOUND=ON -DOPENTURNS_LIBRARIES:FILEPATH="-framework Accelerate" -DUSE_SPHINX=OFF -DPYTHON_EXECUTABLE:FILEPATH=//anaconda/bin/python -DPYTHON_INCLUDE_DIR:PATH=//anaconda/include/python3.5m -DPYTHON_LIBRARY:FILEPATH=//anaconda/lib/libpython3.5m.dylib
+   - make install -j8
+   
